@@ -1,0 +1,3 @@
+stages:
+  - name: "test"
+  - name: "prod"
