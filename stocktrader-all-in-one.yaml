@@ -185,6 +185,8 @@ spec:
       - name: portfolio
         image: bluedemocluster.icp:8500/default/portfolio:latest
         env:
+          - name: DT_CUSTOM_PROP
+            value: "keptn_deployment=blue_green keptn_project=stock-trader keptn_service=portfolio keptn_stage=test"
           - name: JDBC_HOST
             valueFrom:
               secretKeyRef:
